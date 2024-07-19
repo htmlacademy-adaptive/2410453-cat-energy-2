@@ -14,8 +14,16 @@
     <div class="container">
       <nav class="navigation">
         <a class="navigation__logo" href="#">
-          <img class="logo__image" src="images/logo-mobile.svg" width="33" height="38" alt="Логотип Кэт Энерджи">
-          <img class="logo__image" src="images/logo-2.svg" width="101" height="18" alt="Кэт Энерджи">
+          <picture>
+            <source media="(min-width: 1440px)" width="70" height="59" type="image/svg+xml" srcset="images/logo-desktop.svg">
+            <source media="(min-width: 768px)" width="60" height="50" type="image/svg+xml" srcset="images/logo-tablet.svg">
+            <img class="logo__image" src="images/logo-mobile.svg" width="33" height="38" alt="Логотип Кэт Энерджи">
+          </picture>
+          <picture>
+            <source media="(min-width: 1440px)" width="118" height="21" type="image/svg+xml" srcset="images/logo-desktop-2.svg">
+            <source media="(min-width: 768px)" width="101" height="18" type="image/svg+xml" srcset="images/logo-tablet-2.svg">
+            <img class="logo__image" src="images/logo-mobile-2.svg" width="101" height="18" alt="Кэт Энерджи">
+          </picture>
         </a>
         <button class="navigation__menu-button" type="button">
           <span class="visually-hidden">Открыть меню</span>
@@ -49,7 +57,13 @@
         <button class="hero__button button" type="button">
           Подобрать программу
         </button>
-        <img class="hero__image" src="images/index-can-mobile.png" width="280" height="270" alt="Кэт Энерджи продукт">
+        <picture>
+          <source media="(min-width: 1440px)" width="552" height="499" type="image/png" srcset="images/index-can-desktop@1x.png,
+            images/index-can-desktop@2x.png">
+          <source media="(min-width: 768px)" width="709" height="609" type="image/png" srcset="images/index-can-tablet@1x.png,
+            images/index-can-tablet@2x.png">
+          <img class="hero__image" width="280" height="270" src="images/index-can-mobile.png" srcset="images/index-can-mobile@1x.png, images/index-can-mobile@2x.png" alt="Кэт Энерджи продукт">
+        </picture>
       </div>
     </section>
 
@@ -123,7 +137,20 @@
           <span class="costs__title">Затраты на питание:</span>
           <span class="costs__content">15 000 РУБ.</span>
         </div>
-        <img src="images/compare-slider.png" width="280" height="256" alt="Слайдер">
+        <picture>
+          <source media="(min-width: 1440px)" width="560" height="512" type="image/png" srcset="images/cat-tablet-before@1x.png,
+          images/cat-tablet-before@2x.png">
+          <source media="(min-width: 768px)" width="560" height="512" type="image/png" srcset="images/cat-tablet-before@1x.png,
+           images/cat-tablet-before@2x.png">
+          <img src="images/cat-mobile-before.png" width="280" height="256" alt="Котик до">
+        </picture>
+        <picture>
+          <source media="(min-width: 1440px)" width="560" height="512" type="image/png" srcset="images/cat-tablet-after@1x.png,
+          images/cat-tablet-after@2x.png">
+          <source media="(min-width: 768px)" width="560" height="512" type="image/png" srcset="images/cat-tablet-after@1x.png,
+           images/cat-tablet-after@2x.png">
+          <img src="images/cat-mobile-after.png" width="280" height="256" alt="Котик после">
+        </picture>
       </div>
     </section>
 
