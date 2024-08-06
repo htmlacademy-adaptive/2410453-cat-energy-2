@@ -1,11 +1,8 @@
 
-// .main-header {
-//   @media (min-width: $desktop-width) {
-//     &--on--content {
-//       position: absolute;
-//       top: 0;
-//       left: 0;
-//       right: 0;
-//     }
-//   }
-// }
+.main-header {
+  width: 279px;
+  min-height: 38px;
+  display: flex;
+  flex-direction: column;
+  background-color: $color-white;
+}

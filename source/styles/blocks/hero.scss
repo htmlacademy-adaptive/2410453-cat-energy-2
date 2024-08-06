@@ -1,21 +1,60 @@
 
 .hero {
-  @media (min-width: $desktop-width) {
+  background: url("../../images/backgroud-cat-green-mobile@1x.png");
+  background-repeat: no-repeat;
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: center;
+  // align-items: center;
+}
+
+
+// @media (min-width: $mobile-width) {
+//   .hero {
+//     background: url("../../images/backgroud-cat-green-mobile@1x.png");
+//     background-repeat: no-repeat;
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     align-items: center;
+//   }
+// }
+
+@media (min-width: $tablet-width) {
+  .hero {
+    background: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .hero {
     background:
       url("../../images/backgroud-cat-green@1x.png"),
-      linear-gradient(to right, $color-white 50%, #68b738 50%);
+      linear-gradient(to right, $color-white 50%, #61a53a 50%);
     background-repeat: no-repeat;
     background-position: left calc(50% + 520px) bottom, center;
   }
 }
 
 
+.hero__wrapper {
+  max-width: 272px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
 .hero__title {
   font-family: "Oswald", sans-serif;
   font-weight: 400;
   font-size: 36px;
   line-height: 1;
-  color: #000000;
+  color: #ffffff;
+  padding-bottom: 25px;
+  padding-top: 27px;
+  margin: 0;
 }
 
 .hero__content {
@@ -24,5 +63,22 @@
   font-size: 14px;
   line-height: 1;
   text-transform: uppercase;
-  color: #000000;
+  color: #ffffff;
+  padding-bottom: 29px;
+  margin: 0;
+}
+
+.hero__button {
+  padding: 10px 44px;
+  min-width: 280px;
+  min-height: 40px;
+  background-color: #68b738;
+  border: none;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  text-transform: uppercase;
+  text-align: center;
+  color: #ffffff;
 }
