@@ -1,33 +1,16 @@
 
 .hero {
-  background: url("../../images/backgroud-cat-green-mobile@1x.png");
+  background:
+    url("../../images/backgroud-cat-green-mobile@1x.png"),
+    linear-gradient(to bottom, #61a53a, 302px, transparent 302px);
   background-repeat: no-repeat;
-  // display: flex;
-  // flex-direction: column;
-  // justify-content: center;
-  // align-items: center;
-}
+  background-position: center top;
 
-
-// @media (min-width: $mobile-width) {
-//   .hero {
-//     background: url("../../images/backgroud-cat-green-mobile@1x.png");
-//     background-repeat: no-repeat;
-//     display: flex;
-//     flex-direction: column;
-//     justify-content: center;
-//     align-items: center;
-//   }
-// }
-
-@media (min-width: $tablet-width) {
-  .hero {
+  @media (min-width: $tablet-width) {
     background: none;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .hero {
+  @media (min-width: $desktop-width) {
     background:
       url("../../images/backgroud-cat-green@1x.png"),
       linear-gradient(to right, $color-white 50%, #61a53a 50%);
@@ -38,32 +21,34 @@
 
 
 .hero__wrapper {
-  max-width: 272px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  font-family: "Oswald", sans-serif;
+  max-width: 280px;
+  margin: 0 auto;
   text-align: center;
+  color: #ffffff;
+
+  @media (min-width: $tablet-width) {
+    align-items: flex-start;
+    max-width: 100%;
+    text-align: left;
+    color: #000000;
+  }
 }
 
 .hero__title {
-  font-family: "Oswald", sans-serif;
   font-weight: 400;
   font-size: 36px;
   line-height: 1;
-  color: #ffffff;
   padding-bottom: 25px;
   padding-top: 27px;
   margin: 0;
 }
 
 .hero__content {
-  font-family: "Oswald", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 1;
   text-transform: uppercase;
-  color: #ffffff;
   padding-bottom: 29px;
   margin: 0;
 }

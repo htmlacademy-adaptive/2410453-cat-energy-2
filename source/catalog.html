@@ -29,21 +29,25 @@
   <header class="main-header">
     <div class="container">
       <nav class="navigation">
-        <a class="navigation__logo" href="#">
-          <picture>
-            <source media="(min-width: 1200px)" width="70" height="59" type="image/svg+xml" srcset="images/logo-desktop.svg">
-            <source media="(min-width: 768px)" width="60" height="50" type="image/svg+xml" srcset="images/logo-tablet.svg">
-            <img class="logo__image" src="images/logo-mobile.svg" width="33" height="38" alt="Логотип Кэт Энерджи">
-          </picture>
-          <picture>
-            <source media="(min-width: 1200px)" width="118" height="21" type="image/svg+xml" srcset="images/logo-desktop-text.svg">
-            <source media="(min-width: 768px)" width="101" height="18" type="image/svg+xml" srcset="images/logo-tablet-text.svg">
-            <img class="logo__image" src="images/logo-mobile-text.svg" width="101" height="18" alt="Кэт Энерджи">
-          </picture>
-        </a>
-        <button class="navigation__menu-button" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
+        <div class="navigation__wrapper">
+          <a class="navigation__logo" href="#">
+            <picture>
+              <source media="(min-width: 1300px)" width="70" height="59" type="image/svg+xml" srcset="images/logo-desktop.svg">
+              <source media="(min-width: 768px)" width="60" height="50" type="image/svg+xml" srcset="images/logo-tablet.svg">
+              <img class="logo__image" src="images/logo-mobile.svg" width="33" height="38" alt="Логотип Кэт Энерджи">
+            </picture>
+          </a>
+          <a class="navigation__logo" href="#">
+            <picture>
+              <source media="(min-width: 1300px)" width="118" height="21" type="image/svg+xml" srcset="images/logo-desktop-text.svg">
+              <source media="(min-width: 768px)" width="101" height="18" type="image/svg+xml" srcset="images/logo-tablet-text.svg">
+              <img class="logo__text" src="images/logo-mobile-text.svg" width="101" height="18" alt="Кэт Энерджи">
+            </picture>
+          </a>
+          <button class="navigation__menu-button" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+        </div>
         <ul class="navigation__list">
           <li class="navigation__item navigation__item--current">
             <a class="navigation__link" href="index.html">
@@ -285,40 +289,64 @@
     <section class="additionally">
       <div class="container">
         <h2 class="additionally__title">Дополнительные товары</h2>
-        <dl class="additionally__list">
-          <div class="additionally__item">
-            <h3 class="additionally__name">
-              <a class="additionally__link" href="#">Сахарозаменитель</a>
-            </h3>
-            <dt class="additionally__mass">1 упаковка (100 г)</dt>
-            <dd class="additionally__price">200 ₽</dd>
-            <a class="additionally__link" href="#">Заказать</a>
-          </div>
-          <div class="additionally__item">
-            <h3 class="additionally__name">
-              <a class="additionally__link" href="#">Питьевая вода</a>
-            </h3>
-            <dt class="additionally__mass">5 литров</dt>
-            <dd class="additionally__price">50 ₽</dd>
-            <a class="additionally__link" href="#">Заказать</a>
-          </div>
-          <div class="additionally__item">
-            <h3 class="additionally__name">
-              <a class="additionally__link" href="#">Молоко</a>
-            </h3>
-            <dt class="additionally__mass">1 литр</dt>
-            <dd class="additionally__price">100 ₽</dd>
-            <a class="additionally__link" href="#">Заказать</a>
-          </div>
-          <div class="additionally__item">
-            <h3 class="additionally__name">
-              <a class="additionally__link" href="#">Витамины</a>
-            </h3>
-            <dt class="additionally__mass">1 упаковка (30 г)</dt>
-            <dd class="additionally__price">300 ₽</dd>
-            <a class="additionally__link" href="#">Заказать</a>
-          </div>
-        </dl>
+        <ul class="additionally__list">
+          <li class="additionally__item">
+            <article class="additionally-product-card">
+              <h3 class="additionally-product-card__name">
+                <a class="additionally-product-card__link" href="#">Сахарозаменитель</a>
+              </h3>
+              <dl class="additionally-product-card__list">
+                <div class="additionally-product-card__wrapper">
+                  <dt class="additionally-product-card__mass">1 упаковка (100 г)</dt>
+                  <dd class="additionally-product-card__price">200 ₽</dd>
+                </div>
+              </dl>
+              <a class="additionally__link" href="#">Заказать</a>
+            </article>
+          </li>
+          <li class="additionally__item">
+            <article class="additionally-product-card">
+              <h3 class="additionally-product-card__name">
+                <a class="additionally-product-card__link" href="#">Питьевая вода</a>
+              </h3>
+              <dl class="additionally-product-card__list">
+                <div class="additionally-product-card__wrapper">
+                  <dt class="additionally-product-card__mass">5 литров</dt>
+                  <dd class="additionally-product-card__price">50 ₽</dd>
+                </div>
+              </dl>
+              <a class="additionally__link" href="#">Заказать</a>
+            </article>
+          </li>
+          <li class="additionally__item">
+            <article class="additionally-product-card">
+              <h3 class="additionally-product-card__name">
+                <a class="additionally-product-card__link" href="#">Молоко</a>
+              </h3>
+              <dl class="additionally-product-card__list">
+                <div class="additionally-product-card__wrapper">
+                  <dt class="additionally-product-card__mass">1 литр</dt>
+                  <dd class="additionally-product-card__price">100 ₽</dd>
+                </div>
+              </dl>
+              <a class="additionally__link" href="#">Заказать</a>
+            </article>
+          </li>
+          <li class="additionally__item">
+            <article class="additionally-product-card">
+              <h3 class="additionally-product-card__name">
+                <a class="additionally-product-card__link" href="#">Витамины</a>
+              </h3>
+              <dl class="additionally-product-card__list">
+                <div class="additionally-product-card__wrapper">
+                  <dt class="additionally-product-card__mass">1 упаковка (30 г)</dt>
+                  <dd class="additionally-product-card__price">300 ₽</dd>
+                </div>
+              </dl>
+              <a class="additionally__link" href="#">Заказать</a>
+            </article>
+          </li>
+        </ul>
         <p class="additionally__promotion">Закажите все и получите чехол для кота в подарок!</p>
       </div>
     </section>
@@ -326,7 +354,6 @@
     <section class="news">
       <div class="container">
         <h2 class="news__item">Акции и новинки</h2>
-        <p class="news__content">Акции и новинки</p>
         <p class="news__description">Подпишитесь на наши новости и не пропустите ни одного предложения!</p>
         <form class="news__form" action="https://echo.htmlacademy.ru" method="post">
           <label class="visually-hidden" for="news-email">Email</label>
