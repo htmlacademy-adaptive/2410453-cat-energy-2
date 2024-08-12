@@ -8,6 +8,8 @@
   font-size: 36px;
   line-height: 1.11;
   color: #000000;
+  margin: 0;
+  padding-top: 25px;
 }
 
 .experience__content {
@@ -16,22 +18,35 @@
   font-size: 14px;
   line-height: 1.28;
   color: #444444;
+  margin: 0;
+  padding-top: 40px;
 }
 
-.experience-card__content {
-  font-family: "Oswald", sans-serif;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 1;
-  color: #000000;
+.experience__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 95px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  padding-top: 34px;
+  padding-bottom: 20px;
 }
 
-.experience-card__caption {
-  font-family: "Lato", sans-serif;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1;
-  color: #444444;
+.experience__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.experience__footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 20px;
 }
 
 .costs__title,
