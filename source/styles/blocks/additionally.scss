@@ -1,3 +1,17 @@
+.additionally {
+  list-style: none;
+}
+
+.additionally__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
 .additionally__title {
   font-family: "Oswald", sans-serif;
   font-weight: 400;
@@ -12,21 +26,10 @@
   font-size: 16px;
   line-height: 1;
   text-transform: uppercase;
-  color: #222222;
+  color: #ffffff;
+  text-decoration: none;
 }
 
-.additionally__mass {
-  font-family: "Lato", sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1;
-  color: #444444;
-}
-
-.additionally__price {
-  font-family: "Lato", sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1;
-  color: #444444;
+.additionally_btn {
+  min-width: 280px;
 }
