@@ -1,9 +1,12 @@
 .map__invitation {
   display: flex;
   margin: 0;
-  padding: 0;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding: 26px 20px;
+  background-color: #ffffff;
+
+  &--gray {
+    background-color: #f2f2f2;
+  }
 }
 
 .invitation__title {

@@ -44,7 +44,10 @@
               <img class="navigation__logo-text" src="images/logo-mobile-text.svg" width="101" height="18" alt="Кэт Энерджи">
             </picture>
           </a>
-          <button class="navigation__menu-button" type="button">
+          <button class="burger__button" type="button">
+            <span class="navigation__burger__line navigation__burger__line--top"></span>
+            <span class="navigation__burger__line navigation__burger__line--midble"></span>
+            <span class="navigation__burger__line navigation__burger__line--bottom"></span>
             <span class="visually-hidden">Открыть меню</span>
           </button>
         </div>
@@ -386,7 +389,9 @@
             </article>
           </li>
         </ul>
-        <p class="additionally__promotion">Закажите все и получите чехол для кота в подарок!</p>
+        <div class="additionally_wrapper">
+          <p class="additionally__promotion">Закажите все <br>и получите чехол для кота в подарок!</p>
+        </div>
       </div>
     </section>
 
@@ -397,25 +402,25 @@
         <form class="news__form" action="https://echo.htmlacademy.ru" method="post">
           <label class="visually-hidden" for="news-email">Email</label>
           <input class="news__field" id="news-email" type="email" name="news-email" placeholder="кuklachev@gmail.com" required>
-          <button class="news__button" type="submit">Подписаться</button>
+          <button class="news__button btn" type="submit">Подписаться</button>
         </form>
       </div>
     </section>
 
     <section class="map">
-      <div class="container">
-        <h2 class="visually-hidden">Карта</h2>
-        <div class="map__invitation invitation">
-          <div class="invitation__title">Приглашаем к сотрудничеству дилеров!</div>
-          <div class="invitation__address address">
-            <p class="address__street">ул. Большая Конюшенная, д. 19/8</p>
-            <p class="address__sity">
-              Санкт-Петербург
-            </p>
-          </div>
+      <!-- <div class="container"> -->
+      <h2 class="visually-hidden">Карта</h2>
+      <div class="map__invitation map__invitation--gray invitation">
+        <div class="invitation__title">Приглашаем к сотрудничеству дилеров!</div>
+        <div class="invitation__address address">
+          <p class="address__street">ул. Большая Конюшенная, д. 19/8</p>
+          <p class="address__sity">
+            Санкт-Петербург
+          </p>
         </div>
-        <img src="images/image-map.jpg" width="320" height="362" alt="Карта место положения">
       </div>
+      <img src="images/image-map.jpg" width="320" height="362" alt="Карта место положения">
+      <!-- </div> -->
     </section>
   </main>
 
