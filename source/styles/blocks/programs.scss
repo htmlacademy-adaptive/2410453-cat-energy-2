@@ -29,15 +29,16 @@
   }
 }
 
-// .programs__item-wrapper {
-//   display: flex;
-//   align-items: center;
-//   gap: 20px;
+.programs__item-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 20px;
 
-//   @media (min-width: $tablet-width) {
-//     display: block;
-//   }
-// }
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: auto 0;
+  }
+}
 
 .programs__title {
   display: flex;

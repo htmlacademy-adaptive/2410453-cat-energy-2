@@ -25,11 +25,14 @@
 }
 
 .product__item {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr;
   align-items: center;
-  position: relative;
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: center;
+  // align-items: center;
+  // position: relative;
 }
 
 // .product__item::before {
