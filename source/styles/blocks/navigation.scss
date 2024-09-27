@@ -49,10 +49,10 @@
     flex-direction: row;
     gap: 33px;
     background-color: unset;
-  }
 
-  @media (min-width: $desktop-width) {
-    flex-direction: row;
+    .navigation--opened & {
+      display: flex;
+    }
   }
 }
 
@@ -79,7 +79,7 @@
   top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
-  transition: transform 2s ease, opacity 2s ease;
+  transition: transform 0.1s ease, opacity 0.1s ease;
 }
 
 .navigation__burger-line--top {
@@ -90,15 +90,15 @@
   transform: translate(-50%, calc(-50% + 7px));
 }
 
-.burger__button-open .navigation__burger-line--top {
+.navigation--opened .navigation__burger-line--top {
   transform: translate(-50%, -50%) rotate(45deg);
 }
 
-.burger__button-open .navigation__burger-line--midble {
+.navigation--opened .navigation__burger-line--midble {
   opacity: 0;
 }
 
-.burger__button-open .navigation__burger-line--bottom {
+.navigation--opened .navigation__burger-line--bottom {
   transform: translate(-50%, -50%) rotate(-45deg);
 }
 
