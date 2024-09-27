@@ -1,0 +1,12 @@
+
+.main-header {
+  display: flex;
+  flex-direction: column;
+  background-color: $color-white;
+  position: relative;
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    width: 100%;
+  }
+}

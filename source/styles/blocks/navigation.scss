@@ -1,0 +1,128 @@
+.navigation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 279px;
+  min-height: 66px;
+
+  @media (min-width: $tablet-width) {
+    min-width: 704px;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 1300px;
+    justify-content: space-between;
+    flex-direction: row;
+    padding-right: 110px;
+    padding-top: 71px;
+    position: absolute;
+  }
+}
+
+.navigation__wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 13px;
+}
+
+.navigation__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background-color: #ffffff;
+
+  .navigation--opened & {
+    display: block;
+  }
+
+  @media (min-width: $tablet-width) {
+    position: static;
+    display: flex;
+    flex-direction: row;
+    gap: 33px;
+    background-color: unset;
+
+    .navigation--opened & {
+      display: flex;
+    }
+  }
+}
+
+.navigation__burger-button {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+  border: none;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.navigation__burger-line {
+  position: absolute;
+  width: 24px;
+  height: 2px;
+  background-color: #000000;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: transform 0.1s ease, opacity 0.1s ease;
+}
+
+.navigation__burger-line--top {
+  transform: translate(-50%, calc(-50% - 7px));
+}
+
+.navigation__burger-line--bottom {
+  transform: translate(-50%, calc(-50% + 7px));
+}
+
+.navigation--opened .navigation__burger-line--top {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.navigation--opened .navigation__burger-line--midble {
+  opacity: 0;
+}
+
+.navigation--opened .navigation__burger-line--bottom {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.navigation__link {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1;
+  text-transform: uppercase;
+  color: #000000;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-top: 1px solid #e6e6e6;
+  padding-top: 22px;
+  padding-bottom: 24px;
+
+  @media (min-width: $tablet-width) {
+    color: #000000;
+    border-top: unset;
+  }
+
+  @media (min-width: $desktop-width) {
+    color: #ffffff;
+  }
+}
