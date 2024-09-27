@@ -1,3 +1,14 @@
+.map__invitation {
+  display: flex;
+  margin: 0;
+  padding: 26px 20px;
+  background-color: #ffffff;
+
+  &--gray {
+    background-color: #f2f2f2;
+  }
+}
+
 .invitation__title {
   font-family: "Oswald", sans-serif;
   font-weight: 400;
@@ -5,6 +16,8 @@
   line-height: 1.25;
   text-transform: uppercase;
   color: #111111;
+  margin: 0;
+  padding: 0;
 }
 
 .address__street,
@@ -12,7 +25,9 @@
   font-family: "Lato", sans-serif;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.42;
+  line-height: 1.4;
   color: #444444;
+  min-width: 150px;
+  margin: 0;
+  padding: 0;
 }
-
