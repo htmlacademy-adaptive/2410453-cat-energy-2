@@ -7,6 +7,11 @@
   &--gray {
     background-color: #f2f2f2;
   }
+
+  @media (min-width: $tablet-width) {
+    justify-content: space-between;
+    padding: 61px 70px;
+  }
 }
 
 .invitation__title {
@@ -18,6 +23,13 @@
   color: #111111;
   margin: 0;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 1.3;
+    text-transform: uppercase;
+    max-width: 100px;
+  }
 }
 
 .address__street,
@@ -29,5 +41,12 @@
   color: #444444;
   min-width: 150px;
   margin: 0;
-  padding: 0;
+  padding-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 1.25;
+    text-align: right;
+    max-width: 190px;
+  }
 }

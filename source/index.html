@@ -52,7 +52,7 @@
           </button>
         </div>
         <ul class="navigation__list">
-          <li class="navigation__item navigation__item--current">
+          <li class="navigation__item navigation__item-current">
             <a class="navigation__link" href="#">
               Главная
             </a>
@@ -211,14 +211,21 @@
               <span class="costs__content">15 000 РУБ.</span>
             </div>
           </div>
-          <picture>
-            <source media="(min-width: 768px)" width="560" height="512" type="image/png" srcset="images/cat-tablet-before@1x.png 1x, images/cat-tablet-before@2x.png 2x">
-            <img src="images/cat-mobile-before@1x.png" srcset="images/cat-tablet-before@2x.png 2x" width="280" height="256" alt="Котик до">
-          </picture>
-          <picture>
-            <source media="(min-width: 768px)" width="560" height="512" type="image/png" srcset="images/cat-tablet-after@1x.png 1x, images/cat-tablet-after@2x.png 2x">
-            <img src="images/cat-mobile-after@1x.png" srcset="images/cat-mobile-after@2x.png 2x" width="280" height="256" alt="Котик после">
-          </picture>
+          <div class="costs__slider" style="--pos: 50%;">
+            <div class="costs__slide costs__slide--before">
+              <picture>
+                <source media="(min-width: 768px)" width="560" height="512" type="image/png" srcset="images/cat-tablet-before@1x.png 1x, images/cat-tablet-before@2x.png 2x">
+                <img class="costs__image" src="images/cat-mobile-before@1x.png" srcset="images/cat-tablet-before@2x.png 2x" width="280" height="256" alt="Котик до">
+              </picture>
+            </div>
+            <div class="costs__slide costs__slide--after">
+              <picture>
+                <source media="(min-width: 768px)" width="560" height="512" type="image/png" srcset="images/cat-tablet-after@1x.png 1x, images/cat-tablet-after@2x.png 2x">
+                <img class="costs__image" src="images/cat-mobile-after@1x.png" srcset="images/cat-mobile-after@2x.png 2x" width="280" height="256" alt="Котик после">
+              </picture>
+            </div>
+            <div class="costs__delimetr"></div>
+          </div>
         </div>
       </div>
     </section>
@@ -231,7 +238,6 @@
           <p class="address__street">ул. Большая Конюшенная, д. 19/8</p>
           <p class="address__sity">Санкт-Петербург</p>
         </div>
-        <img src="images/image-map.jpg" width="320" height="362" alt="Карта место положения">
       </div>
       <img class="map__image" src="images/image-map.jpg" width="320" height="362" alt="Карта место положения">
     </section>
