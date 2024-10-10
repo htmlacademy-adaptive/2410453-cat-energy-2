@@ -5,6 +5,17 @@
   padding-bottom: 40px;
 }
 
+.news__inner {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    padding-left: 33px;
+    padding-right: 33px;
+  }
+}
+
 .news__item {
   position: relative;
   font-family: "Oswald", sans-serif;
@@ -43,6 +54,10 @@
   display: flex;
   flex-direction: column;
   gap: 16px;
+
+  @media (min-width: $tablet-width) {
+    width: 1076px;
+  }
 }
 
 .news__field {
