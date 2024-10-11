@@ -1,8 +1,16 @@
+.map {
+  @media (min-width: $desktop-width) {
+    position: relative;
+  }
+}
+
 .map__invitation {
   display: flex;
   margin: 0;
   padding: 26px 20px;
   background-color: #ffffff;
+  gap: 0 20px;
+  justify-content: space-between;
 
   &--gray {
     background-color: #f2f2f2;
@@ -14,10 +22,18 @@
   }
 
   @media (min-width: $desktop-width) {
+    gap: 84px;
     position: absolute;
-    justify-content: start;
-    padding: 61px 70px;
+    justify-content: center;
+    padding: 50px 60px;
     z-index: 1;
+    min-width: 565px;
+    bottom: 100px;
+    left: 100px;
+
+    &--white {
+      background-color: #ffffff;
+    }
   }
 }
 
@@ -54,6 +70,12 @@
     font-size: 16px;
     line-height: 1.25;
     text-align: right;
+    max-width: 190px;
+    padding-bottom: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: start;
     max-width: 190px;
     padding-bottom: 20px;
   }

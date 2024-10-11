@@ -4,11 +4,13 @@
   justify-content: center;
   min-width: 279px;
   min-height: 66px;
+  border-bottom: 1px solid #cdcdcd;
 
   @media (min-width: $tablet-width) {
     min-width: 704px;
     justify-content: space-between;
     flex-direction: row;
+    border-bottom: unset;
   }
 
   @media (min-width: $desktop-width) {
@@ -116,9 +118,9 @@
     bottom: 12px;
   }
 
-  @media (min-width: $desktop-width) {
-    background-color: #ffffff;
-  }
+  // @media (min-width: $desktop-width) {
+  //   background-color: #ffffff;
+  // }
 }
 
 .navigation__link {
@@ -144,9 +146,9 @@
     border-top: unset;
   }
 
-  @media (min-width: $desktop-width) {
-    color: #ffffff;
-  }
+  // @media (min-width: $desktop-width) {
+  //   color: #ffffff;
+  // }
 }
 
 // .navigation__link-current::after {

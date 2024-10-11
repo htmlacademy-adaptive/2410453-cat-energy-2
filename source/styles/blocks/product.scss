@@ -22,7 +22,7 @@
 .product__list {
   display: grid;
   // grid-template-columns: 1fr;
-  gap: 25px;
+  gap: 21px;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -38,11 +38,14 @@
   }
 }
 
-// .product__item {
-//   display: grid;
-//   grid-template-columns: 1fr;
-//   align-items: center;
-// }
+.product__item {
+  border-bottom: 1px solid #cdcdcd;
+  padding-bottom: 5px;
+
+  @media (min-width: $tablet-width) {
+    border-bottom: unset;
+  }
+}
 
 .product__description {
   font-family: "Lato", sans-serif;

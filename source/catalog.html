@@ -26,7 +26,7 @@
 </head>
 
 <body class="page__body">
-  <header class="main-header main-header--on--content">
+  <header class="main-header">
     <div class="container">
       <nav class="navigation">
         <div class="navigation__wrapper">
@@ -324,89 +324,110 @@
     <section class="additionally">
       <div class="container">
         <h2 class="additionally__title">Дополнительные товары</h2>
-        <ul class="additionally__list">
-          <li class="additionally__item">
+        <div class="additionally__container">
+          <div class="additionally__inner">
+            <ul class="additionally__list">
+              <li class="additionally__item">
+                <article class="additionally-product-card">
+                  <!-- <div class="additionally-product-card__inner"> -->
+                  <h3 class="additionally-product-card__name">
+                    <a class="additionally-product-card__link" href="#">Сахарозаменитель</a>
+                  </h3>
+                  <dl class="additionally-product-card__list">
+                    <div class="additionally-product-card__wrapper">
+                      <dt class="additionally-product-card__mass">1 упаковка (100 г)</dt>
+                      <dd class="additionally-product-card__price">200 ₽</dd>
+                    </div>
+                  </dl>
+                  <!-- </div> -->
+                  <a class="additionally__link btn additionally__btn" href="#">Заказать</a>
+                </article>
+              </li>
+              <li class="additionally__item">
+                <article class="additionally-product-card">
+                  <h3 class="additionally-product-card__name">
+                    <a class="additionally-product-card__link" href="#">Питьевая вода</a>
+                  </h3>
+                  <dl class="additionally-product-card__list">
+                    <div class="additionally-product-card__wrapper">
+                      <dt class="additionally-product-card__mass">5 литров</dt>
+                      <dd class="additionally-product-card__price">50 ₽</dd>
+                    </div>
+                  </dl>
+                  <a class="additionally__link btn additionally__btn" href="#">Заказать</a>
+                </article>
+              </li>
+              <li class="additionally__item">
+                <article class="additionally-product-card">
+                  <h3 class="additionally-product-card__name">
+                    <a class="additionally-product-card__link" href="#">Молоко</a>
+                  </h3>
+                  <dl class="additionally-product-card__list">
+                    <div class="additionally-product-card__wrapper">
+                      <dt class="additionally-product-card__mass">1 литр</dt>
+                      <dd class="additionally-product-card__price">100 ₽</dd>
+                    </div>
+                  </dl>
+                  <a class="additionally__link btn additionally__btn" href="#">Заказать</a>
+                </article>
+              </li>
+              <li class="additionally__item">
+                <article class="additionally-product-card">
+                  <h3 class="additionally-product-card__name">
+                    <a class="additionally-product-card__link" href="#">Витамины</a>
+                  </h3>
+                  <dl class="additionally-product-card__list">
+                    <div class="additionally-product-card__wrapper">
+                      <dt class="additionally-product-card__mass">1 упаковка (30 г)</dt>
+                      <dd class="additionally-product-card__price">300 ₽</dd>
+                    </div>
+                  </dl>
+                  <a class="additionally__link btn additionally__btn" href="#">Заказать</a>
+                </article>
+              </li>
+              <!-- <li class="additionally__item">
             <article class="additionally-product-card">
-              <!-- <div class="additionally-product-card__inner"> -->
-              <h3 class="additionally-product-card__name">
-                <a class="additionally-product-card__link" href="#">Сахарозаменитель</a>
-              </h3>
-              <dl class="additionally-product-card__list">
-                <div class="additionally-product-card__wrapper">
-                  <dt class="additionally-product-card__mass">1 упаковка (100 г)</dt>
-                  <dd class="additionally-product-card__price">200 ₽</dd>
-                </div>
-              </dl>
-              <!-- </div> -->
-              <a class="additionally__link btn additionally_btn" href="#">Заказать</a>
+              <div class="additionally__wrapper">
+                <svg class="additionally__icon" width="27" height="17">
+                  <use href="../icons/stack.svg#icon-present"></use>
+                </svg>
+                <p class="additionally__promotion">Закажите все <br>и получите чехол для кота в подарок!</p>
+              </div>
             </article>
-          </li>
-          <li class="additionally__item">
-            <article class="additionally-product-card">
-              <h3 class="additionally-product-card__name">
-                <a class="additionally-product-card__link" href="#">Питьевая вода</a>
-              </h3>
-              <dl class="additionally-product-card__list">
-                <div class="additionally-product-card__wrapper">
-                  <dt class="additionally-product-card__mass">5 литров</dt>
-                  <dd class="additionally-product-card__price">50 ₽</dd>
-                </div>
-              </dl>
-              <a class="additionally__link btn additionally_btn" href="#">Заказать</a>
-            </article>
-          </li>
-          <li class="additionally__item">
-            <article class="additionally-product-card">
-              <h3 class="additionally-product-card__name">
-                <a class="additionally-product-card__link" href="#">Молоко</a>
-              </h3>
-              <dl class="additionally-product-card__list">
-                <div class="additionally-product-card__wrapper">
-                  <dt class="additionally-product-card__mass">1 литр</dt>
-                  <dd class="additionally-product-card__price">100 ₽</dd>
-                </div>
-              </dl>
-              <a class="additionally__link btn additionally_btn" href="#">Заказать</a>
-            </article>
-          </li>
-          <li class="additionally__item">
-            <article class="additionally-product-card">
-              <h3 class="additionally-product-card__name">
-                <a class="additionally-product-card__link" href="#">Витамины</a>
-              </h3>
-              <dl class="additionally-product-card__list">
-                <div class="additionally-product-card__wrapper">
-                  <dt class="additionally-product-card__mass">1 упаковка (30 г)</dt>
-                  <dd class="additionally-product-card__price">300 ₽</dd>
-                </div>
-              </dl>
-              <a class="additionally__link btn additionally_btn" href="#">Заказать</a>
-            </article>
-          </li>
-        </ul>
-        <div class="additionally_wrapper">
+          </li> -->
+            </ul>
+          </div>
+
+          <div class="additionally__wrapper">
+            <svg class="additionally__icon" width="27" height="17">
+              <use href="../icons/stack.svg#icon-present"></use>
+            </svg>
+            <p class="additionally__promotion">Закажите все <br>и получите чехол для кота в подарок!</p>
+          </div>
+          <!-- <div class="additionally_wrapper">
           <p class="additionally__promotion">Закажите все <br>и получите чехол для кота в подарок!</p>
+        </div> -->
         </div>
       </div>
     </section>
     <section class="news">
       <div class="container">
 
-        <h2 class="news__item">Акции и новинки</h2>
+        <h2 class="news__title">Акции и новинки</h2>
         <p class="news__description">Подпишитесь на наши новости и не пропустите ни одного предложения!</p>
         <div class="news__inner">
           <form class="news__form" action="https://echo.htmlacademy.ru" method="post">
             <label class="visually-hidden" for="news-email">Email</label>
             <input class="news__field" id="news-email" type="email" name="news-email" placeholder="кuklachev@gmail.com" required>
-            <!-- <button class="news__button btn" type="submit">Подписаться</button> -->
+            <button class="news__button btn" type="submit">Подписаться</button>
           </form>
-          <button class="news__button btn" type="submit">Подписаться</button>
+          <!-- <button class="news__button btn" type="submit">Подписаться</button> -->
         </div>
       </div>
     </section>
     <section class="map">
       <h2 class="visually-hidden">Карта</h2>
-      <div class="map__invitation map__invitation--gray">
+      <div class="map__invitation map__invitation--gray map__invitation--white">
         <div class="map__invitation-title">Приглашаем к сотрудничеству дилеров!</div>
         <div class="map__invitation-address">
           <p class="map__invitation-street">ул. Большая Конюшенная, д. 19/8</p>

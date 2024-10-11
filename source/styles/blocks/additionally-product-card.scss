@@ -1,8 +1,26 @@
-// .additionally-product-card {
-//   display: grid;
-//   grid-template-columns: auto auto;
-//   grid-template-rows: auto auto auto auto;
-// }
+.additionally-product-card {
+  padding: 0;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: auto 240px;
+    grid-template-rows: auto auto;
+    padding-left: 31px;
+    padding-right: 31px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    width: 898px;
+    padding-left: 0;
+    padding-right: 0;
+    align-items: center;
+    // justify-content: space-between;
+    // justify-content: space-between;
+    // flex-direction: column;
+  }
+}
 
 // .additionally-product-card__inner {
 //   @media (min-width: $tablet-width) {
@@ -17,12 +35,32 @@
   padding: 0;
   padding-top: 13px;
   padding-bottom: 15px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    // width: 260px;
+    // flex-grow: 1;
+  }
 }
 
 .additionally-product-card__name {
+  display: flex;
+  align-items: center;
   margin: 0;
   padding: 0;
-  padding-top: 32px;
+  padding-bottom: 10px;
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 1;
+    text-transform: uppercase;
+    // justify-content: flex-start;
+    width: 351px;
+    // flex-grow: 1;
+    // justify-content: space-between;
+  }
 }
 
 .additionally-product-card__link {
@@ -33,17 +71,52 @@
   text-transform: uppercase;
   color: #222222;
   text-decoration: none;
+  padding-top: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 10px;
+  }
 }
 
 .additionally-product-card__wrapper {
   display: flex;
   justify-content: space-between;
+
+  @media (min-width: $desktop-width) {
+    // justify-content: flex-start;
+    // max-width: 260px;
+    // flex-grow: 1;
+    justify-content: center;
+  }
 }
 
-.additionally-product-card__mass .additionally-product-card__price {
+.additionally-product-card__mass {
   font-family: "Lato", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 1;
   color: #444444;
+
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: flex-start;
+    width: 115px;
+  }
+}
+
+.additionally-product-card__price {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1;
+  color: #444444;
+
+  @media (min-width: $desktop-width) {
+    font-size: 16px;
+    line-height: 1.25;
+    display: flex;
+    justify-content: center;
+    width: 115px;
+  }
 }
