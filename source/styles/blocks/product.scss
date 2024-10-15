@@ -8,6 +8,7 @@
   padding: 0;
   padding-top: 27px;
   padding-bottom: 41px;
+  border-bottom: 1px solid #cdcdcd;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
@@ -16,12 +17,12 @@
     padding: 0;
     padding-top: 64px;
     padding-bottom: 84px;
+    border-bottom: unset;
   }
 }
 
 .product__list {
   display: grid;
-  // grid-template-columns: 1fr;
   gap: 21px;
   list-style: none;
   margin: 0;

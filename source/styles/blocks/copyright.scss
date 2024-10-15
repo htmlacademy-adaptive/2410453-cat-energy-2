@@ -1,0 +1,40 @@
+.copyright {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #444444;
+  margin: 0;
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    justify-content: flex-start;
+    border-top: unset;
+    gap: 20px;
+  }
+}
+
+.copyright:hover {
+  color: #68b738;
+}
+
+.copyright:active {
+  color: #68b738;
+  opacity: 0.3;
+}
+
+.copyright__text-link {
+  color: #444444;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.copyright__text-link:active {
+  color: #444444;
+}
