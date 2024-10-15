@@ -52,17 +52,17 @@
           </button>
         </div>
         <ul class="navigation__list">
-          <li class="navigation__item navigation__item--current">
-            <a class="navigation__link" href="#">
+          <li class="navigation__item navigation__item-current">
+            <span class="navigation__link">
               Главная
-            </a>
+            </span>
           </li>
-          <li class="navigation__item">
+          <li class="navigation__item navigation__item-custom">
             <a class="navigation__link" href="catalog.html">
               Каталог продукции
             </a>
           </li>
-          <li class="navigation__item">
+          <li class="navigation__item navigation__item-custom">
             <a class="navigation__link" href="404.html">
               Подбор программы
             </a>
@@ -71,7 +71,6 @@
       </nav>
     </div>
   </header>
-
   <main class="main">
     <section class="hero">
       <div class="container">
@@ -89,7 +88,9 @@
           </div>
         </div>
         <button class="btn hero__button" type="button">
-          Подобрать программу
+          <a class="hero__button-link" href="#">
+            Подобрать программу
+          </a>
         </button>
       </div>
     </section>
@@ -112,9 +113,11 @@
               Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.
             </p>
             <a class="programs__link" href="#">Каталог slim
-              <svg class="programs__link-icon" width="32" height="12">
-                <use href="../icons/stack.svg#icon-arrow"></use>
-              </svg>
+              <div class="programs__link-wrapper">
+                <svg class="programs__link-icon" width="32" height="12">
+                  <use href="../icons/stack.svg#icon-arrow"></use>
+                </svg>
+              </div>
             </a>
           </li>
           <li class="programs__item">
@@ -132,9 +135,11 @@
               Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
             </p>
             <a class="programs__link" href="#">Каталог pro
-              <svg class="programs__link-icon" width="32" height="12">
-                <use href="../icons/stack.svg#icon-arrow"></use>
-              </svg>
+              <div class="programs__link-wrapper">
+                <svg class="programs__link-icon" width="32" height="12">
+                  <use href="../icons/stack.svg#icon-arrow"></use>
+                </svg>
+              </div>
             </a>
           </li>
         </ul>
@@ -187,11 +192,10 @@
         </ul>
       </div>
     </section>
-
     <section class="experience">
       <div class="container">
-        <h2 class="experience__title">Живой пример</h2>
         <div class="experience__wrapper">
+          <h2 class="experience__title">Живой пример</h2>
           <p class="experience__content">
             Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
           </p>
@@ -199,44 +203,54 @@
             <ul class="experience__list">
               <li class="experience__item">
                 <p class="experience__item-content">5 кг</p>
-                <p class="experience__item-caption">снижение <br>веса</p>
+                <p class="experience__item-caption">снижение веса</p>
               </li>
               <li class="experience__item">
                 <p class="experience__item-content">60 дней</p>
-                <p class="experience__item-caption">затрачено <br>времени</p>
+                <p class="experience__item-caption">затрачено времени</p>
               </li>
             </ul>
-            <div class="experience__footer costs">
+            <div class="experience__footer">
               <span class="costs__title">Затраты на питание:</span>
               <span class="costs__content">15 000 РУБ.</span>
             </div>
           </div>
-          <picture>
-            <source media="(min-width: 768px)" width="560" height="512" type="image/png" srcset="images/cat-tablet-before@1x.png 1x, images/cat-tablet-before@2x.png 2x">
-            <img src="images/cat-mobile-before@1x.png" srcset="images/cat-tablet-before@2x.png 2x" width="280" height="256" alt="Котик до">
-          </picture>
-          <picture>
-            <source media="(min-width: 768px)" width="560" height="512" type="image/png" srcset="images/cat-tablet-after@1x.png 1x, images/cat-tablet-after@2x.png 2x">
-            <img src="images/cat-mobile-after@1x.png" srcset="images/cat-mobile-after@2x.png 2x" width="280" height="256" alt="Котик после">
-          </picture>
+          <div class="costs__slider" style="--pos: 50%;">
+            <div class="costs__slide costs__slide--before">
+              <picture>
+                <source media="(min-width: 768px)" width="560" height="512" type="image/png" srcset="images/cat-tablet-before@1x.png 1x, images/cat-tablet-before@2x.png 2x">
+                <img class="costs__image" src="images/cat-mobile-before@1x.png" srcset="images/cat-tablet-before@2x.png 2x" width="280" height="256" alt="Котик до">
+              </picture>
+            </div>
+            <div class="costs__slide costs__slide--after">
+              <picture>
+                <source media="(min-width: 768px)" width="560" height="512" type="image/png" srcset="images/cat-tablet-after@1x.png 1x, images/cat-tablet-after@2x.png 2x">
+                <img class="costs__image" src="images/cat-mobile-after@1x.png" srcset="images/cat-mobile-after@2x.png 2x" width="280" height="256" alt="Котик после">
+              </picture>
+            </div>
+            <div class="costs__delimetr">
+              <div class="costs__delimetr-background">
+                <svg class="costs__icon" width="27" height="17">
+                  <use href="../icons/stack.svg#icon-slider"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
-
     <section class="map">
       <h2 class="visually-hidden">Карта</h2>
-      <div class="map__invitation invitation">
-        <div class="invitation__title">Приглашаем к сотрудничеству дилеров!</div>
-        <div class="invitation__address address">
-          <p class="address__street">ул. Большая Конюшенная, д. 19/8</p>
-          <p class="address__sity">Санкт-Петербург</p>
+      <div class="map__invitation">
+        <div class="map__invitation-title">Приглашаем к сотрудничеству дилеров!</div>
+        <div class="map__invitation-address">
+          <p class="map__invitation-street">ул. Большая Конюшенная, д. 19/8</p>
+          <p class="map__invitation-sity">Санкт-Петербург</p>
         </div>
-        <img src="images/image-map.jpg" width="320" height="362" alt="Карта место положения">
       </div>
-      <img class="map__image" src="images/image-map.jpg" width="320" height="362" alt="Карта место положения">
+      <iframe src="https://yandex.ru/map-widget/v1/?ll=30.323036%2C59.938631&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NzM5NDE4NBJh0KDQvtGB0YHQuNGPLCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQu9C40YbQsCwgMTkvOCIKDZaV8kEVKcFvQg%2C%2C&z=17.02" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
     </section>
   </main>
-
   <footer class="main-footer">
     <div class="container">
       <div class="main-footer__wrapper">
@@ -270,7 +284,7 @@
           </li>
         </ul>
         <a class="copyright" href="#">
-          <span class="copyright__text">HTML Academy</span>
+          <span class="copyright__text-link">HTML Academy</span>
           <svg class="copyright__icon" width="27" height="34">
             <use href="../icons/stack.svg#html-academy-logo"></use>
           </svg>

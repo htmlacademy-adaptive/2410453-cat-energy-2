@@ -1,15 +1,43 @@
+.map {
+  @media (min-width: $desktop-width) {
+    position: relative;
+  }
+}
+
 .map__invitation {
   display: flex;
   margin: 0;
   padding: 26px 20px;
   background-color: #ffffff;
+  gap: 0 20px;
+  justify-content: space-between;
 
   &--gray {
     background-color: #f2f2f2;
   }
+
+  @media (min-width: $tablet-width) {
+    justify-content: space-between;
+    padding: 61px 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 84px;
+    position: absolute;
+    justify-content: center;
+    padding: 50px 60px;
+    z-index: 1;
+    min-width: 565px;
+    bottom: 100px;
+    left: 100px;
+
+    &--white {
+      background-color: #ffffff;
+    }
+  }
 }
 
-.invitation__title {
+.map__invitation-title {
   font-family: "Oswald", sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -18,10 +46,17 @@
   color: #111111;
   margin: 0;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 1.3;
+    text-transform: uppercase;
+    max-width: 164px;
+  }
 }
 
-.address__street,
-.address__sity {
+.map__invitation-street,
+.map__invitation-sity {
   font-family: "Lato", sans-serif;
   font-weight: 400;
   font-size: 14px;
@@ -29,5 +64,24 @@
   color: #444444;
   min-width: 150px;
   margin: 0;
-  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 1.25;
+    text-align: right;
+    max-width: 190px;
+    padding-bottom: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: start;
+    max-width: 190px;
+    padding-bottom: 20px;
+  }
+}
+
+.map iframe {
+  display: block;
+  border: none;
+  width: 100%;
 }
