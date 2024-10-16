@@ -96,13 +96,13 @@
   }
 }
 
-.additionally__link {
+.additionally__btn-text {
   display: flex;
   justify-content: center;
   align-items: center;
   font-family: "Oswald", sans-serif;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 20px;
   line-height: 1;
   text-transform: uppercase;
   color: #ffffff;
@@ -112,17 +112,18 @@
   grid-column: span 2;
 }
 
-.additionally__link:hover {
+.additionally__btn-text:hover {
   background-color: #5eaa2f;
 }
 
-.additionally__link:active {
+.additionally__btn-text:active {
   opacity: 0.3;
 }
 
 .additionally__btn {
   grid-column: span 2;
   min-width: 280px;
+  cursor: pointer;
 
   @media (min-width: $desktop-width) {
     width: 140px;
@@ -148,6 +149,7 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  background-color: #68b738;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;

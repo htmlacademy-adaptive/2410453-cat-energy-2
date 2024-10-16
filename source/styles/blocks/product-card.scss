@@ -15,7 +15,7 @@
     @media (min-width: $tablet-width) {
       border: 1px solid #f2f2f2;
       margin-top: 81px;
-      height: 488px;
+      height: 506px;
       padding-left: 36px;
       padding-right: 36px;
       padding-bottom: 0;
@@ -200,19 +200,33 @@
   text-decoration: none;
   grid-column: 1 / -1;
   margin-top: 20px;
+  height: 54px;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 204px;
+  }
 }
 
 .product-card__button:hover {
   background-color: #5eaa2f;
 }
 
-.product-card__button-link {
+.product-card__button-hover:hover {
+  color: #ebebeb;
+}
+
+.product-card__button-text {
   display: flex;
   justify-content: center;
   align-items: center;
   font-family: "Oswald", sans-serif;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 20px;
   line-height: 1.25;
   text-transform: uppercase;
   color: #ffffff;
@@ -228,20 +242,24 @@
   @media (min-width: $tablet-width) {
     width: 100%;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+  }
 }
 
-.product-card__button-link:hover {
-  background-color: #5eaa2f;
-}
+// .product-card__button-text:hover {
+//   background-color: #ebebeb;
+// }
 
-.product-card__button-link:active {
+.product-card__button-text:active {
   opacity: 0.3;
 }
 
-.product-card__button-link-hover:hover {
-  background-color: #ebebeb;
-}
+// .product-card__button-text-hover:hover {
+//   background-color: #ebebeb;
+// }
 
-.product-card__button-link-hover:active {
+.product-card__button-text-hover:active {
   opacity: 0.3;
 }

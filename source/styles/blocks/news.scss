@@ -126,6 +126,7 @@
   height: 56px;
   margin: 0;
   padding: 0;
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
     width: 256px;
@@ -140,7 +141,7 @@
   background-color: #5eaa2f;
 }
 
-.news__button-link {
+.news__button-text {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -156,10 +157,10 @@
   padding-bottom: 8px;
 }
 
-.news__button-link:hover {
+.news__button-text:hover {
   background-color: #5eaa2f;
 }
 
-.news__button-link:active {
+.news__button-text:active {
   opacity: 0.3;
 }
