@@ -20,9 +20,8 @@
   }
 }
 
-
 .hero__wrapper {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   max-width: 280px;
   text-align: center;
   color: #ffffff;
@@ -70,7 +69,7 @@
   margin: 0;
 
   @media (min-width: $tablet-width) {
-    font-family: "Oswald", sans-serif;
+    font-family: "Oswald", "Arial", sans-serif;
     font-weight: 400;
     font-size: 60px;
     line-height: 1;
@@ -82,7 +81,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    font-family: "Oswald", sans-serif;
+    font-family: "Oswald", "Arial", sans-serif;
     font-weight: 400;
     font-size: 60px;
     line-height: 1;
@@ -99,7 +98,7 @@
   margin: 0;
 
   @media (min-width: $tablet-width) {
-    font-family: "Oswald", sans-serif;
+    font-family: "Oswald", "Arial", sans-serif;
     font-weight: 400;
     font-size: 20px;
     line-height: 1;
@@ -113,7 +112,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    font-family: "Oswald", sans-serif;
+    font-family: "Oswald", "Arial", sans-serif;
     font-weight: 400;
     font-size: 20px;
     line-height: 1;
@@ -149,7 +148,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
@@ -192,7 +191,7 @@
 }
 
 .hero__button-text {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
