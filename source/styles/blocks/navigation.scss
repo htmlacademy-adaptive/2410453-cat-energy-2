@@ -3,14 +3,13 @@
   flex-direction: column;
   justify-content: center;
   min-width: 279px;
-  min-height: 66px;
-  border-bottom: 1px solid #cdcdcd;
 
   @media (min-width: $tablet-width) {
     min-width: 704px;
     justify-content: space-between;
     flex-direction: row;
     border-bottom: unset;
+    gap: 1px 50px;
   }
 
   @media (min-width: $desktop-width) {
@@ -25,6 +24,15 @@
   flex-direction: row;
   justify-content: space-between;
   gap: 13px;
+  padding-bottom: 15px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 2px;
+  }
+
+  // @media (min-width: $desktop-width) {
+
+  // }
 }
 
 .navigation__logo:hover {
@@ -50,16 +58,38 @@
     display: block;
   }
 
+  // .no-js & {
+  //   position: static;
+  //   display: block;
+  // }
+
   @media (min-width: $tablet-width) {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.33;
     position: static;
     display: flex;
-    flex-direction: row;
-    gap: 33px;
+    flex-flow: row wrap;
+    gap: 5px 37px;
     background-color: unset;
 
     .navigation--opened & {
       display: flex;
     }
+
+    // .no-js & {
+    //   display: flex;
+    // }
+  }
+
+  @media (min-width: $desktop-width) {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.45;
+    text-transform: uppercase;
+    gap: 5px 54px;
+    max-width: 50%;
+    padding-left: 30px;
   }
 }
 
@@ -139,7 +169,7 @@
 }
 
 .navigation__link {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 20px;
   line-height: 1;

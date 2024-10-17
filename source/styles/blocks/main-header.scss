@@ -1,15 +1,23 @@
-
 .main-header {
   display: flex;
   flex-direction: column;
   position: relative;
+  padding-top: 11px;
+  border-bottom: 1px solid #cdcdcd;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 6px;
+    border-bottom: unset;
+  }
 
   @media (min-width: $desktop-width) {
+    border-bottom: unset;
     position: static;
     width: 100%;
 
     &--on-content {
       position: absolute;
+      z-index: 10;
     }
   }
 }

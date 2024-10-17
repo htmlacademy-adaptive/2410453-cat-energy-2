@@ -1,5 +1,9 @@
 .additionally {
   list-style: none;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 20px;
+  }
 }
 
 .additionally__container {
@@ -29,11 +33,12 @@
 
 .additionally__item {
   border-top: 1px solid #cdcdcd;
-  padding-bottom: 25px;
+  padding-bottom: 10px;
   border-bottom: 1px solid #cdcdcd;
 
   @media (min-width: $tablet-width) {
     border-top: unset;
+    padding-bottom: 30px;
   }
 
   @media (min-width: $desktop-width) {
@@ -45,24 +50,24 @@
 
 .additionally__title {
   position: relative;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 24px;
   line-height: 1;
   color: #000000;
   margin: 0;
   padding: 0;
-  padding-top: 25px;
+  padding-top: 28px;
   padding-right: 50px;
-  padding-bottom: 20px;
+  padding-bottom: 24px;
   width: fit-content;
 
   @media (min-width: $tablet-width) {
-    padding-left: 50px;
-    font-size: 40px;
+    padding-left: 40px;
+    font-size: 42px;
     line-height: 1;
     border-top: unset;
-    padding-bottom: 80px;
+    padding-bottom: 85px;
   }
 }
 
@@ -96,13 +101,13 @@
   }
 }
 
-.additionally__link {
+.additionally__btn-text {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 20px;
   line-height: 1;
   text-transform: uppercase;
   color: #ffffff;
@@ -112,17 +117,18 @@
   grid-column: span 2;
 }
 
-.additionally__link:hover {
+.additionally__btn-text:hover {
   background-color: #5eaa2f;
 }
 
-.additionally__link:active {
+.additionally__btn-text:active {
   opacity: 0.3;
 }
 
 .additionally__btn {
   grid-column: span 2;
   min-width: 280px;
+  cursor: pointer;
 
   @media (min-width: $desktop-width) {
     width: 140px;
@@ -133,36 +139,6 @@
   background-color: #5eaa2f;
 }
 
-.additionally__wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 48px 0;
-  padding: 0;
-  padding-top: 54px;
-  padding-bottom: 43px;
-  margin: 0;
-  margin-top: 54px;
-  background-image: url("/images/background-additionally-green.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-
-  @media (min-width: $tablet-width) {
-    flex-direction: row;
-    justify-content: space-around;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding-left: 42px;
-    padding-right: 42px;
-    margin-top: 0;
-    flex-direction: column;
-    justify-content: center;
-  }
-}
-
 .additionally__icon {
   display: flex;
   width: 80px;
@@ -170,20 +146,70 @@
 }
 
 .additionally__promotion {
-  font-family: "Lato", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("/images/background-additionally-green.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: #68b738;
+  font-family: "Lato", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 1.25;
   text-align: center;
   color: #ffffff;
+  gap: 48px 0;
+  padding: 0;
+  padding-top: 54px;
+  padding-bottom: 43px;
   margin: 0;
-  max-width: 190px;
+  margin-top: 43px;
 
   @media (min-width: $tablet-width) {
     text-align: start;
+    margin-top: 71px;
   }
 
   @media (min-width: $desktop-width) {
+    margin-top: 0;
     text-align: center;
   }
+}
+
+.additionally__promotion-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px 0;
+  max-width: 190px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    min-width: 666px;
+    gap: 0 50px;
+    margin-bottom: 19px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px 0;
+    max-width: 190px;
+    min-width: 245px;
+  }
+}
+
+.additionally__promotion-text::before {
+  content: "";
+  display: block;
+  background-image: url("../../icons/stack.svg#icon-present");
+  width: 78px;
+  height: 80px;
 }
