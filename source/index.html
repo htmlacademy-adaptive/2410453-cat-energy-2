@@ -21,8 +21,8 @@
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="msapplication-config" content="favicons/browserconfig.xml">
   <meta name="theme-color" content="#ffffff">
-  <link rel="preload" href="../../fonts/lato/Lato-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
-  <link rel="preload" href="../../fonts/oswald/oswaldregular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/lato/Lato-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/oswald/oswaldregular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   <link rel="stylesheet" href="styles/styles.css">
   <script src="scripts/index.js" defer></script>
 </head>
@@ -83,7 +83,7 @@
           </div>
           <div class="hero__wrapper-picture">
             <picture>
-              <source type="image/webp" media="(min-width: 768px)" width="709" height="609" srcset="images/index-can-tablet@1x.webp 1x, images/index-can-tablet@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" width="552" height="499" srcset="images/index-can-tablet@1x.webp 1x, images/index-can-tablet@2x.webp 2x">
               <source type="image/webp" media="(min-width: 768px)" width="709" height="609" srcset="images/index-can-tablet@1x.webp 1x, images/index-can-tablet@2x.webp 2x">
               <source type="image/webp" srcset="images/index-can-desktop@1x.webp 1x, images/index-can-mobile@2x.webp 2x">
               <source media="(min-width: 1300px)" width="552" height="499" type="image/png" srcset="images/index-can-desktop@1x.png 1x, images/index-can-desktop@2x.png 2x">
@@ -226,13 +226,6 @@
     </section>
     <section class="map">
       <h2 class="visually-hidden">Карта</h2>
-      <div class="map__location-image">
-        <picture>
-          <source media="(min-width: 768px)" width="768" height="400" type="image/png" srcset="images/image-location@1x.png 1x, images/image-location@2x.png 2x">
-          <img class="map__image" src="images/image-location@1x.png" srcset="images/image-location@2x.png 2x" width="768" height="400" alt="Cat Energy slim 500 г">
-          <!-- <img class="map__location-image" src="images/map-location@2x.jpg" width="768" height="400" alt="Локация"> -->
-        </picture>
-      </div>
       <div class="map__invitation">
         <div class="map__invitation-title">Приглашаем к сотрудничеству дилеров!</div>
         <div class="map__invitation-address">
@@ -240,12 +233,11 @@
           <p class="map__invitation-sity">Санкт-Петербург</p>
         </div>
       </div>
-      <!-- <iframe class="map__location" src="https://yandex.ru/map-widget/v1/?ll=30.323036%2C59.938631&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NzM5NDE4NBJh0KDQvtGB0YHQuNGPLCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQu9C40YbQsCwgMTkvOCIKDZaV8kEVKcFvQg%2C%2C&z=17.02" width="560" height="361" style="position:relative;"></iframe> -->
+      <iframe class="map__location" src="https://yandex.ru/map-widget/v1/?ll=30.323036%2C59.938631&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NzM5NDE4NBJh0KDQvtGB0YHQuNGPLCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQu9C40YbQsCwgMTkvOCIKDZaV8kEVKcFvQg%2C%2C&z=17.02" width="560" height="361" style="position:relative;"></iframe>
       <div class="map__location-image">
         <picture>
           <source media="(min-width: 768px)" width="768" height="400" type="image/png" srcset="images/image-location@1x.png 1x, images/image-location@2x.png 2x">
-          <img src="images/image-location@1x.png" srcset="images/image-location@2x.png 2x" width="768" height="400" alt="Cat Energy slim 500 г">
-          <!-- <img class="map__location-image" src="images/map-location@2x.jpg" width="768" height="400" alt="Локация"> -->
+          <img class="map__image" src="images/image-location@1x.png" srcset="images/image-location@2x.png 2x" width="768" height="400" alt="Cat Energy slim 500 г">
         </picture>
       </div>
     </section>
