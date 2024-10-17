@@ -29,10 +29,6 @@
   @media (min-width: $tablet-width) {
     padding-bottom: 2px;
   }
-
-  // @media (min-width: $desktop-width) {
-
-  // }
 }
 
 .navigation__logo:hover {
@@ -58,10 +54,10 @@
     display: block;
   }
 
-  // .no-js & {
-  //   position: static;
-  //   display: block;
-  // }
+  .no-js & {
+    position: static;
+    display: block;
+  }
 
   @media (min-width: $tablet-width) {
     font-weight: 400;
@@ -77,9 +73,9 @@
       display: flex;
     }
 
-    // .no-js & {
-    //   display: flex;
-    // }
+    .no-js & {
+      display: flex;
+    }
   }
 
   @media (min-width: $desktop-width) {
