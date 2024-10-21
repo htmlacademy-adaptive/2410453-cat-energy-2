@@ -7,8 +7,18 @@
   color: #ffffff;
   border: none;
 
-  &--gray {
+  &:hover,
+  &:focus {
+    background-color: #5eaa2f;
+  }
+
+  &--secondary {
     background-color: #f2f2f2;
     color: #000000;
+
+    &:hover,
+    &:focus {
+      background-color: #ebebeb;
+    }
   }
 }

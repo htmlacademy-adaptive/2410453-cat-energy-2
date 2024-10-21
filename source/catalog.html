@@ -46,12 +46,14 @@
               <img class="navigation__logo-text" src="images/logo-mobile-text.svg" width="101" height="18" alt="Кэт Энерджи">
             </picture>
           </a>
-          <button class="navigation__burger-button" type="button">
-            <span class="navigation__burger-line navigation__burger-line--top"></span>
-            <span class="navigation__burger-line navigation__burger-line--midble"></span>
-            <span class="navigation__burger-line navigation__burger-line--bottom"></span>
-            <span class="visually-hidden">Открыть меню</span>
-          </button>
+          <div class="navigation__inner">
+            <button class="navigation__burger-button" type="button">
+              <span class="navigation__burger-line navigation__burger-line--top"></span>
+              <span class="navigation__burger-line navigation__burger-line--midble"></span>
+              <span class="navigation__burger-line navigation__burger-line--bottom"></span>
+              <span class="visually-hidden">Открыть меню</span>
+            </button>
+          </div>
         </div>
         <ul class="navigation__list">
           <li class="navigation__item navigation__item-custom">
@@ -84,7 +86,7 @@
                 <a class="product-card__reference" href="#">
                   <picture>
                     <source type="image/webp" media="(min-width: 768px)" width="163" height="174" srcset="images/catalog-product-tablet-1@1x.webp 1x, images/catalog-product-tablet-1@2x.webp 2x">
-                    <source type="image/webp" width="68" height="86" srcset="images/catalog-product-mobile-1@1x.webp 1x, images/catalog-product-tablet-1@2x.webp 2x">
+                    <source type="image/webp" width="68" height="86" srcset="images/catalog-product-mobile-1@1x.webp 1x, images/catalog-product-mobile-1@2x.webp 2x">
                     <source media="(min-width: 768px)" width="163" height="174" type="image/png" srcset="images/catalog-product-tablet-1@1x.png 1x, images/catalog-product-tablet-1@2x.png 2x">
                     <img class="product-card__image" src="images/catalog-product-mobile-1@1x.png" srcset="images/catalog-product-mobile-1@2x.png 2x" width="68" height="86" alt="Cat Energy pro 500 г">
                   </picture>
@@ -300,7 +302,7 @@
                 <a class="product-card__reference" href="#">
                   <picture>
                     <source type="image/webp" media="(min-width: 768px)" width="163" height="174" srcset="images/catalog-product-tablet-7@1x.webp 1x, images/catalog-product-tablet-7@2x.webp 2x">
-                    <source type="image/webp" srcset="images/catalog-product-tablet-7@1x.webp 1x, images/catalog-product-tablet-7@2x.webp 2x">
+                    <source type="image/webp" srcset="images/catalog-product-mobile-7@1x.webp 1x, images/catalog-product-mobile-7@2x.webp 2x">
                     <source media="(min-width: 768px)" width="163" height="174" type="image/png" srcset="images/catalog-product-tablet-7@1x.png 1x, images/catalog-product-tablet-7@2x.png 2x">
                     <img src="images/catalog-product-mobile-7@1x.png" srcset="images/catalog-product-mobile-7@2x.png 2x" width="72" height="84" alt="Cat Energy slim 500 г">
                   </picture>
@@ -336,9 +338,9 @@
                 <h2 class="product__name">Показать еще 100500 товаров</h2>
                 <p class="product__description">На самом деле вкусов гораздо больше!</p>
               </div>
-              <a class="product-card__button-background btn btn--gray product-card__button--black" href="#">
-                <span class="product-card__button-text product-card__button-text--black product-card__button-text-hover">Показать все</span>
-              </a>
+              <button class="product-card__button btn btn--secondary" type="button">
+                <span class="product-card__button-text">Показать все</span>
+              </button>
             </article>
           </li>
         </ul>
@@ -415,7 +417,7 @@
             </li>
           </ul>
           <p class="additionally__promotion">
-            <span class="additionally__promotion-text">Закажите все <br>и получите чехол для кота в подарок!</span>
+            <span class="additionally__promotion-text">Закажите все <br>и получите чехол для <br>кота в подарок!</span>
           </p>
         </div>
       </div>
@@ -444,7 +446,11 @@
           <p class="map__invitation-sity">Санкт-Петербург</p>
         </div>
       </div>
-      <iframe class="map__location" src="https://yandex.ru/map-widget/v1/?ll=30.323036%2C59.938631&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NzM5NDE4NBJh0KDQvtGB0YHQuNGPLCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQu9C40YbQsCwgMTkvOCIKDZaV8kEVKcFvQg%2C%2C&z=17.02" width="560" height="361" style="position:relative;"></iframe>
+      <div class="map__location">
+        <div class="map__location-interactive">
+          <iframe src="https://yandex.ru/map-widget/v1/?ll=30.323036%2C59.938631&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NzM5NDE4NBJh0KDQvtGB0YHQuNGPLCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQu9C40YbQsCwgMTkvOCIKDZaV8kEVKcFvQg%2C%2C&z=17.02" width="560" height="361" style="position:relative;"></iframe>
+        </div>
+      </div>
       <div class="map__location-image">
         <picture>
           <source media="(min-width: 768px)" width="768" height="400" type="image/png" srcset="images/image-location@1x.png 1x, images/image-location@2x.png 2x">
