@@ -2,11 +2,17 @@
   margin: 0;
   padding: 0;
   padding-top: 40px;
-  padding-bottom: 40px;
+  padding-bottom: 41px;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 89px;
+    padding-bottom: 78px;
     padding-left: 39px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 55px;
+    padding-bottom: 105px;
+    padding-left: 0;
   }
 }
 
@@ -16,8 +22,7 @@
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
-    padding-left: 33px;
-    padding-right: 33px;
+    padding-right: 38px;
   }
 }
 
@@ -30,14 +35,18 @@
   color: #000000;
   margin: 0;
   padding: 0;
-  padding-right: 50px;
+  padding-right: 41px;
   width: fit-content;
 
   @media (min-width: $tablet-width) {
-    padding-left: 50px;
-    font-size: 42px;
+    font-size: 32px;
     line-height: 1;
-    padding-bottom: 80px;
+    padding: 17px 41px 35px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 40px;
+    padding: 20px 41px 35px 0;
   }
 }
 
@@ -47,11 +56,16 @@
   width: 100vw;
   height: 2px;
   background-color: #68b738;
-  bottom: 11px;
+  bottom: 13px;
   left: 100%;
 
   @media (min-width: $tablet-width) {
-    bottom: 101px;
+    bottom: 52px;
+    right: 100%;
+  }
+
+  @media (min-width: $desktop-width) {
+    bottom: 54px;
     right: 100%;
   }
 }
@@ -66,8 +80,13 @@
   right: calc(100% + 50px);
 
   @media (min-width: $tablet-width) {
-    bottom: 101px;
-    right: 100%;
+    bottom: 52px;
+    right: 282px;
+  }
+
+  @media (min-width: $desktop-width) {
+    bottom: 54px;
+    right: 333px;
   }
 }
 
@@ -84,8 +103,17 @@
   padding-bottom: 24px;
 
   @media (min-width: $tablet-width) {
+    max-width: 628px;
     font-size: 24px;
     line-height: 1.33;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1217px;
+    font-size: 24px;
+    line-height: 1.33;
+    padding-top: 37px;
+    padding-bottom: 24px;
   }
 }
 
@@ -101,7 +129,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 200px;
+    margin-left: 233px;
     margin-right: 200px;
   }
 }
@@ -142,10 +170,6 @@
   }
 }
 
-.news__button:hover {
-  background-color: #5eaa2f;
-}
-
 .news__button-text {
   display: flex;
   justify-content: center;
@@ -158,14 +182,9 @@
   text-align: center;
   color: #ffffff;
   text-decoration: none;
-  padding-top: 8px;
-  padding-bottom: 8px;
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
-.news__button-text:hover {
-  background-color: #5eaa2f;
-}
-
-.news__button-text:active {
-  opacity: 0.3;
-}

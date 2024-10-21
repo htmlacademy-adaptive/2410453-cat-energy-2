@@ -4,15 +4,84 @@
   left: 0;
   width: 100%;
   height: 100%;
+
+  @media (min-width: $desktop-width) {
+    padding-top: 106px;
+    padding-left: 88px;
+  }
+}
+
+.map__location {
+  position: relative;
+  height: 359px;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    height: 399px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: static;
+    height: 95px;
+  }
+}
+
+.map__location-interactive {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+  }
+
+  .no-js & {
+    display: none;
+  }
 }
 
 .map__location-image {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 0;
+  z-index: 1;
   width: 100%;
   height: 100%;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+  }
 }
 
 .map__location-image img {
@@ -38,19 +107,15 @@
   @media (min-width: $tablet-width) {
     justify-content: space-between;
     padding: 62px 71px 40px;
-    min-width: 760px;
-    height: 200px;
   }
 
   @media (min-width: $desktop-width) {
     gap: 84px;
-    position: absolute;
+    flex-wrap: wrap;
     justify-content: center;
     padding: 50px 60px;
     z-index: 3;
-    min-width: 565px;
-    bottom: 100px;
-    left: 100px;
+    width: 590px;
 
     &--white {
       background-color: #ffffff;
@@ -108,6 +173,6 @@
   z-index: 2;
 
   @media (min-width: $tablet-width) {
-    height: 402px;
+    height: 100%;
   }
 }

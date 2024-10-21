@@ -1,18 +1,20 @@
 .additionally-product-card {
   padding: 0;
   margin: 0;
+  padding-bottom: 7px;
 
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: auto 240px;
     grid-template-rows: auto auto;
-    padding-left: 31px;
-    padding-right: 31px;
+    padding-left: 37px;
+    padding-right: 37px;
+    padding-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
     display: flex;
-    width: 898px;
+    width: 895px;
     padding-left: 0;
     padding-right: 0;
     align-items: center;
@@ -22,7 +24,7 @@
 .additionally-product-card__list {
   margin: 0;
   padding: 0;
-  padding-top: 13px;
+  padding-top: 12px;
   padding-bottom: 15px;
 
   @media (min-width: $tablet-width) {
@@ -31,11 +33,16 @@
     align-items: center;
     width: 240px;
     flex-grow: 1;
+    padding-top: 25px;
+    padding-bottom: 18px;
   }
 
   @media (min-width: $desktop-width) {
     justify-content: space-between;
     align-items: center;
+    padding-top: 20px;
+    padding-bottom: 9px;
+    width: 240px;
   }
 }
 
@@ -44,13 +51,19 @@
   align-items: center;
   margin: 0;
   padding: 0;
-  padding-bottom: 10px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 25px;
+    padding-bottom: 24px;
+  }
 
   @media (min-width: $desktop-width) {
     font-size: 20px;
     line-height: 1;
     text-transform: uppercase;
-    width: 351px;
+    width: 326px;
+    padding-top: 1px;
+    padding-bottom: 1px;
   }
 }
 
@@ -62,10 +75,18 @@
   text-transform: uppercase;
   color: #222222;
   text-decoration: none;
-  padding-top: 20px;
+  padding-top: 14px;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 10px;
+    padding-bottom: 0;
+    padding-top: 0;
+    font-size: 20px;
+    line-height: 1;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 27px;
+    padding-bottom: 22px;
   }
 }
 
@@ -84,12 +105,20 @@
   font-size: 14px;
   line-height: 1;
   color: #444444;
+  margin: 0;
+  padding: 0;
 
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 1.25;
+  }
 
   @media (min-width: $desktop-width) {
+    font-size: 16px;
+    line-height: 1.25;
     display: flex;
     justify-content: flex-start;
-    width: 115px;
+    width: 156px;
   }
 }
 
@@ -99,6 +128,14 @@
   font-size: 14px;
   line-height: 1;
   color: #444444;
+  padding: 0;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 1.25;
+    margin-left: 56px;
+  }
 
   @media (min-width: $desktop-width) {
     font-size: 16px;
@@ -106,5 +143,6 @@
     display: flex;
     justify-content: center;
     width: 115px;
+    margin-left: 48px;
   }
 }
